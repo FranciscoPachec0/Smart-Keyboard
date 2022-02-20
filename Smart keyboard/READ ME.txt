@@ -1,0 +1,6 @@
+Comandos para compilar:
+
+gcc -Wall -c struct.c
+ar -rc libstruct.a struct.o
+ar -t libstruct.a
+gcc -Wall -o main main.c -L. -lstruct
